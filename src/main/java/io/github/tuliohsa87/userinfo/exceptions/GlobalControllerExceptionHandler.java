@@ -15,7 +15,7 @@ import static org.springframework.http.HttpStatus.NOT_FOUND;
 public class GlobalControllerExceptionHandler {
 
     @ExceptionHandler(CpfException.class)
-    public ResponseEntity<StandardError> emailNotSent(CpfException e, HttpServletRequest request) {
+    public ResponseEntity<StandardError> errorSend(CpfException e, HttpServletRequest request) {
         StandardError err = new StandardError();
         err.setTimestamp(Instant.now());
         err.setStatus(NOT_FOUND.value());

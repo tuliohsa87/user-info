@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.validator.constraints.br.CPF;
 
 @Getter
 @Setter
@@ -16,6 +17,7 @@ import lombok.Setter;
 public class UserInfo {
 
     @Id
+    @CPF(message = "Enter a valid CPF")
     private String cpf;
     private StatusToVote status;
 }

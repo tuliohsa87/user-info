@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>io.github.tuliohsa87</groupId>
 	<artifactId>user-info</artifactId>
-	<version>0.2.0</version>
+	<version>0.2.1</version>
 	<name>user-info</name>
 	<description>Demo project for Spring Boot for integration test with user information.</description>
 	<properties>
